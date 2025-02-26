@@ -1,0 +1,142 @@
+body {
+    background-color: #f8f9fa;
+    min-height: 100vh;
+}
+
+.navbar {
+    padding: 0.5rem 1rem;
+}
+
+.logo {
+    max-height: 40px;
+    width: auto;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.bi {
+    color: #3975b6;
+}
+
+.list-group-item {
+    border: none;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding: 1rem 0;
+}
+
+.list-group-item:last-child {
+    border-bottom: none;
+}
+
+.vencimento-dias {
+    color: #dc3545;
+    font-weight: 500;
+}
+
+.valor {
+    font-weight: 500;
+}
+
+.status-indicator {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.status-ativo {
+    background-color: #28a745;
+}
+
+.status-inativo {
+    background-color: #dc3545;
+}
+
+.table th {
+    font-weight: 500;
+    color: #6c757d;
+    border-top: none;
+}
+
+.btn-action {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+    color: #3975b6;
+    background: none;
+    border: none;
+}
+
+.btn-action:hover {
+    color: #2c5c8f;
+}
+
+.prestador-header {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.prestador-info {
+    color: #6c757d;
+}
+
+.nav-tabs .nav-link {
+    color: #6c757d;
+    border: none;
+    padding: 1rem 1.5rem;
+}
+
+.nav-tabs .nav-link:hover {
+    border: none;
+    color: #3975b6;
+}
+
+.nav-tabs .nav-link.active {
+    color: #3975b6;
+    border: none;
+    border-bottom: 2px solid #3975b6;
+    font-weight: 500;
+}
+
+/* Responsividade*/
+@media (max-width: 280px) {
+    .container-fluid {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
+    .card-body {
+        padding: 1rem;
+    }
+
+    h2.card-title {
+        font-size: 1.5rem;
+    }
+
+    .card-subtitle {
+        font-size: 0.8rem;
+    }
+
+    .display-6 {
+        font-size: 1.5rem;
+    }
+
+    .table-responsive {
+        font-size: 0.8rem;
+    }
+
+    .nav-tabs .nav-link {
+        padding: 0.5rem;
+        font-size: 0.8rem;
+    }
+
+    .prestador-header {
+        padding: 1rem;
+    }
+}

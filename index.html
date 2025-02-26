@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecoplan Engenharia - Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="/src/img/ecoplan.png" alt="Ecoplan Engenharia" class="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">
+                            <i class="bi bi-grid"></i> Dashboard
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="prestadores.html">
+                            <i class="bi bi-people"></i> Prestadores
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-primary" id="btnNovoPrestador" href="/cadastro-prestador.html">
+                            <i class="bi bi-plus text-white"></i> Adicionar Prestador
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid py-4">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h1 class="h4 mb-0"><i class="bi bi-people"></i> Dashboard</h1>
+        </div>
+        
+        <div class="row g-4">
+            <!-- Cards informativos -->
+            <div class="col-6 col-lg-3">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <i class="bi bi-people display-6 mb-2"></i>
+                        <h6 class="card-subtitle mb-2">Prestadores de serviço</h6>
+                        <h2 class="card-title mb-0" id="totalPrestadores">0</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-lg-3">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <i class="bi bi-file-text display-6 mb-2"></i>
+                        <h6 class="card-subtitle mb-2">Contratos vigentes</h6>
+                        <h2 class="card-title mb-0" id="contratosVigentes">0</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-lg-3">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <i class="bi bi-calendar-event display-6 mb-2"></i>
+                        <h6 class="card-subtitle mb-2">Contratos à vencer</h6>
+                        <h2 class="card-title mb-0" id="contratosVencer">0</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-lg-3">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <i class="bi bi-currency-dollar display-6 mb-2"></i>
+                        <h6 class="card-subtitle mb-2">Valor total contratos</h6>
+                        <h2 class="card-title mb-0" id="valorTotalContratos">R$ 0,00</h2>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Listas -->
+            <div class="col-12 col-lg-6">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title mb-4">Vencimentos Próximos</h5>
+                        <div class="list-group list-group-flush" id="vencimentosList"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-6">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title mb-4">Pagamentos pendentes</h5>
+                        <div class="list-group list-group-flush" id="pagamentosList"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
